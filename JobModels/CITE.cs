@@ -356,9 +356,7 @@ namespace jobsearch.az.JobModels
 
             }
 
-            var xml = new XmlSerializer(typeof(List<Employee>));   
-            using FileStream Fs = new FileStream("Employees1.xml", FileMode.Append, FileAccess.Write);
-            xml.Serialize(Fs, Employees);
+            
         }
 
 
@@ -409,9 +407,7 @@ namespace jobsearch.az.JobModels
 
             }
 
-            var xml = new XmlSerializer(typeof(List<Employer>));    
-            using FileStream Fs = new FileStream("Employers1.xml", FileMode.Append, FileAccess.Write);
-            xml.Serialize(Fs, Employers);
+            
         }
 
         
