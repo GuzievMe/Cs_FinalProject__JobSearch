@@ -10,4 +10,16 @@
   <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _email="mahamguziyev@gmail.com" _phone="0505284497" _category="Maliyye" _position="Muhasibatlig" _city="Zaqatala" _sex="kishi" _education="tam ali" _workExperience="3-5 il" _minSalary="900" _isAccept="true" _skills="coxli bacariglar" _name="maham" _surname="guziyev" _age="23" _about="Dun vuqudaa" />
   <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _email="maqaquziyev@gmail.com" _phone="0505284497" _category="Informasiya" _position="IT" _city="baki" _sex="kishi" _education="ama" _workExperience="5 ilden cox" _minSalary="1500" _isAccept="true" _skills="IT" _name="Justin" _surname="Poirer" _age="23" _about="haqqimdaozumem" />
   <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _minSalary="0" _isAccept="false" _age="0" />
+</ArrayOfEmployee><?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _email="mahamguziyev@gmail.com" _phone="0505284497" _category="Maliyye" _position="Muhasibatlig" _city="Zaqatala" _sex="kishi" _education="tam ali" _workExperience="3-5 il" _minSalary="900" _isAccept="true" _skills="coxli bacariglar" _name="maham" _surname="guziyev" _age="23" _about="Dun vuqudaa" />
+</ArrayOfEmployee><?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _email="mahamguziyev@gmail.com" _phone="0505284497" _category="Maliyye" _position="Muhasibatlig" _city="Zaqatala" _sex="kishi" _education="tam ali" _workExperience="3-5 il" _minSalary="900" _isAccept="true" _skills="coxli bacariglar" _name="maham" _surname="guziyev" _age="23" _about="Dun vuqudaa" />
+  <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _email="maqaquziyev@gmail.com" _phone="0505284497" _category="Informasiya" _position="IT" _city="baki" _sex="kishi" _education="ama" _workExperience="5 ilden cox" _minSalary="1500" _isAccept="true" _skills="IT" _name="Justin" _surname="Poirer" _age="23" _about="haqqimdaozumem" />
+</ArrayOfEmployee><?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _email="mahamguziyev@gmail.com" _phone="0505284497" _category="Maliyye" _position="Muhasibatlig" _city="Zaqatala" _sex="kishi" _education="tam ali" _workExperience="3-5 il" _minSalary="900" _isAccept="true" _skills="coxli bacariglar" _name="maham" _surname="guziyev" _age="23" _about="Dun vuqudaa" />
+  <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _email="maqaquziyev@gmail.com" _phone="0505284497" _category="Informasiya" _position="IT" _city="baki" _sex="kishi" _education="ama" _workExperience="5 ilden cox" _minSalary="1500" _isAccept="true" _skills="IT" _name="Justin" _surname="Poirer" _age="23" _about="haqqimdaozumem" />
+  <Employee _aktiv="true" _id="00000000-0000-0000-0000-000000000000" _minSalary="0" _isAccept="false" _age="0" />
 </ArrayOfEmployee>

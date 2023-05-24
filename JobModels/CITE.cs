@@ -356,16 +356,16 @@ namespace jobsearch.az.JobModels
 
             }
 
-            //return new Employee(_id, _email, _phone, _category, _position, _city, _sex, _education, _workExperience, _minSalary, _name, _surname, _age, _about, _skills, _date, _dateToEnd);
-
-            //return Re;
+            var xml = new XmlSerializer(typeof(List<Employee>));   
+            using FileStream Fs = new FileStream("Employees1.xml", FileMode.Append, FileAccess.Write);
+            xml.Serialize(Fs, Employees);
         }
 
 
 
         /////////// VAKANSIYA YERLESHDIRILMESI 
 
-        /// int minSalary, int maxSalary, short  minAge, short maxAge, string requirements, string aboutWork, string nameOfCompany, string elaqedarShexs,DateOnly date )
+        
         public void CreateVacancy()
         {
             Employer Ve = new();
@@ -409,6 +409,9 @@ namespace jobsearch.az.JobModels
 
             }
 
+            var xml = new XmlSerializer(typeof(List<Employer>));    
+            using FileStream Fs = new FileStream("Employers1.xml", FileMode.Append, FileAccess.Write);
+            xml.Serialize(Fs, Employers);
         }
 
         
