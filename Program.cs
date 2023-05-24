@@ -79,27 +79,11 @@ namespace jobsearch.az
             //    serializer.Serialize(writer, C.Employees );
             //}
 
-            var xml = new XmlSerializer(typeof(List<Employer>));
-            using FileStream Fs = new FileStream("Employers.xml", FileMode.OpenOrCreate, FileAccess.Write);
-            xml.Serialize(Fs, C.Employers);
+            
 
 
 
-            //var U2 = new User(Guid.NewGuid(), "Evgeny", "Tiersen", "Evgeny@gmail.com", "Maham9999", 1999, 5, 14);
-
-            //Post P = new Post(Guid.NewGuid(), "Hi I m Maham", "Mamed");
-            ///Post P1 = new(Guid.NewGuid(), "Hay loremipsumdolorset", "IamMosh");
-            //var P2 = new Post(Guid.NewGuid(), "Mariam itsFoggy day today", "IamEvgeny");
-
-            //Admin A1 = new Admin(Guid.NewGuid(), "xxtentacion", "Levy", "Tentacion@gmail.com", "Yasmin9999", 1999, 5, 14);
-
-
-            //DataBase D1 = new DataBase(); D1.AddUser(U); D1.AddUser(U1); D1.AddUser(U2);
-
-            //D1.AddPost(P); D1.AddPost(P1); D1.AddPost(P2);
-
-            //D1.AddAdmin(A1); D1.AddAdmin(A1);
-
+            
 
 
 

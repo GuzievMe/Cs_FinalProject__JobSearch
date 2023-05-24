@@ -19,10 +19,6 @@ namespace jobsearch.az.JobModels
         public short _age { get; set; }
         [XmlAttribute]
         public string _about { get; set; }
-
-
-
-        //string aboutWorkPlace = "";
         [XmlAttribute ]
         public string _skills;
 

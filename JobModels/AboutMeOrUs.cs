@@ -38,8 +38,8 @@ namespace jobsearch.az.JobModels
         //[XmlElement("Item")]
         public DateOnly _date { get; set; }
         //[XmlAttribute]
-        [XmlIgnore ]
-        //[XmlArray ]
+        [XmlIgnore]
+        //[XmlArray]
         //[XmlAnyAttribute ]
         //[XmlElement("Item")]
         public DateOnly _dateToEnd { get; set; }

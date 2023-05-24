@@ -16,6 +16,8 @@ namespace jobsearch.az.JobModels
         public  List<Employee> Employees = new();
         //[XmlElement("Item")]
         public  List<Employer> Employers = new() ;
+
+
         private List<Employer> GozleyenVakasiyalar = new();
         private List<Employee> GozleyenCVler = new() { };
 
@@ -37,27 +39,32 @@ namespace jobsearch.az.JobModels
             public List<Employee> GetEmployees() { return this.Employees; }
             public List<Employer> GetEmployers() { return this.Employers; }
    
-        //public List<Employer> GetGozleyenVakansiyalar() { return this.GozleyenVakasiyalar; }
-        //public List<Employee> GetGozleyenCVler() { return this.GozleyenCVler; }
+        
 
 
         public void AddEmployees(Employee worker) {
             Employees.Add(worker);
-            //JsonSerializerOptions Op = new();
+
+            // JsonSerializerOptions Op = new();
             // Op.WriteIndented = true;
-           // File.WriteAllText("Emplyees.json", System.Text.Json.JsonSerializer.Serialize(Employees));
+            // File.WriteAllText("Emplyees1.json", JsonSerializer.Serialize(Employees));
+
+            var xml = new XmlSerializer(typeof(List<Employee>));    //xml.Formatting = new Formatting.Indented;
+            using FileStream Fs = new FileStream("Employees1.xml", FileMode.Append, FileAccess.Write);
+            xml.Serialize(Fs, Employees);
         }
+
         public void AddEmployers(Employer worker) {
             Employers.Add(worker);
 
+            var xml = new XmlSerializer(typeof(List<Employer>));    //xml.Formatting = new Formatting.Indented;
+            using FileStream Fs = new FileStream("Employers1.xml", FileMode.Append, FileAccess.Write);
+            xml.Serialize(Fs, Employers);
+
            
-            //var xml = new XmlSerializer(typeof(List<Employer>));
-            //using FileStream Fs = new FileStream("Employers.xml", FileMode.OpenOrCreate, FileAccess.Write);
-            //xml.Serialize(Fs, Employers);
 
         }
-        //public void AddVakansiya(Employer vacancy) { GozleyenVakasiyalar.Add(vacancy); }
-        //public void AddGozleyenCVler(Employee worker) { GozleyenCVler.Add(worker); }
+        
 
 
         //======================================================================================================//
@@ -221,7 +228,7 @@ namespace jobsearch.az.JobModels
                 if (vac._id.ToString() == id)
                 {
                     Console.Clear();
-                    string sms = "Please , Include the varification code that We just will send your Email address .    ";
+                    string sms = "Bu vakansiyaya Muraciet edildi .    ";
                     foreach (var let in sms) { Console.Write(let); Thread.Sleep(15); }
 
 
@@ -234,7 +241,7 @@ namespace jobsearch.az.JobModels
 
                     var fromAddress = new MailAddress("mahamguziyev@gmail.com", "maham1902");
                     var toAddress = new MailAddress(vac._email, vac._nameOfCompany );
-                    const string fromPassword = "onrhngbglgvnhuqp";
+                    const string fromPassword = "wlfejqccuyomzrpp";
                      string subject = $"{vac._position }";
                     string  body = $"\n\n{cv}\n\n ";
 
@@ -270,7 +277,7 @@ namespace jobsearch.az.JobModels
                 if (vac._id.ToString() == id)
                 {
                     Console.Clear();
-                    string sms = "Please , Include the varification code that We just will send your Email address .    ";
+                    string sms = "Bu CV sahibi musahibeye cagirildi .    ";
                     foreach (var let in sms) { Console.Write(let); Thread.Sleep(15); }
                     
 
@@ -283,7 +290,7 @@ namespace jobsearch.az.JobModels
 
                     var fromAddress = new MailAddress("mahamguziyev@gmail.com", "maham1902");
                     var toAddress = new MailAddress(vac._email , vac._name );
-                    const string fromPassword = "onrhngbglgvnhuqp";
+                    const string fromPassword = "wlfejqccuyomzrpp";
                     const string subject = "Davet";
                     string  body = $"{Vakansiya._nameOfCompany } shirketi terefinden {Vakansiya ._position } sahesi uzre Musahibeye devet olunursunuz";
 
@@ -431,7 +438,7 @@ namespace jobsearch.az.JobModels
 
                 var fromAddress = new MailAddress("mahamguziyev@gmail.com", "maham1902");
                 var toAddress = new MailAddress(email);
-                const string fromPassword = "cgkxexienfrvyxpn";
+                const string fromPassword = "wlfejqccuyomzrpp";
                 const string subject = "JobSearch.az Code ";
                 string body = random_code.ToString();
 
